@@ -1,0 +1,63 @@
+html {
+    width: 100%;
+}
+@media only screen and (max-width: 640px) {
+    html {
+        background-color: grey;
+        font-size: 20px;
+    }
+    button {
+        padding: 2em;
+        background-color: green;
+        border-radius: 0px;
+    }
+    .contenedor  {
+        flex-direction: column;
+    }
+} 
+@media only screen and (min-width: 641px) and (max-width: 1280px) {
+    html {
+        background-color: lightgray;
+    }
+    button:hover {
+        cursor: pointer;
+    } 
+    .contenedor  {
+        flex-direction: row;
+    }
+} 
+@media only screen and (min-width: 1281px) {
+    html {
+        background-color: black;
+        color: white;
+    }
+    .contenedor  {
+        flex-direction: column-reverse;
+    }
+    #tres {
+        width: 50%;
+    }
+    #dos, #uno {
+        width: 25%;
+    }
+} 
+@media print {
+    html {
+        font-size: 14px;
+        font-family: serif;
+    }
+    button {
+        display: none;
+    }
+} 
+.capa {
+    width: 500px;
+    text-align: center;
+}
+button {
+    border-radius: 5px;
+}
+.contenedor {
+    display: flex;
+    align-items: center;
+}
